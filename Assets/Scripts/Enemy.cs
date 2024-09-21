@@ -1,8 +1,6 @@
 using System;
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody))]
-
 public class Enemy : MonoBehaviour
 {
     [SerializeField] private Mover _mover; 

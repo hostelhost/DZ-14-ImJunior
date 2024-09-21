@@ -31,8 +31,10 @@ public class Spawner : MonoBehaviour
 
     private Vector3 GetTargetPosition()
     {
-        Vector3 target = Random.insideUnitSphere * 100;
-        return target = new Vector3(target.x, 1, target.z);
+        int targetAreaSize = 100;
+        int targetY = 1;
+        Vector3 target = Random.insideUnitSphere * targetAreaSize;
+        return target = new Vector3(target.x, targetY, target.z);
     }
 
     private List<Vector3> GetPointsPositions()

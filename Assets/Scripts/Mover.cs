@@ -14,7 +14,7 @@ public class Mover : MonoBehaviour
 
     private IEnumerator MovingProcess(Vector3 targetPosition)
     {
-        while (transform.position != targetPosition)
+        while (Vector3.Distance(transform.position, targetPosition) != 0)
         {
              transform.position = Vector3.MoveTowards(transform.position, targetPosition, _speed * Time.deltaTime);        
              yield return null;
